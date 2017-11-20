@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter</title>
+    <!-- Fuentes -->
+	  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:400,500,600,700,800,900" rel="stylesheet">
+	  <!-- Iconos -->
+	  <script src="https://use.fontawesome.com/5317c4f18c.js"></script>
+    <!-- Archivo CSS vinculado -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <!-- Inicio, Notificaciones y Mensajes -->
+        <ul>
+          <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>&ensp;Inicio</a></li>
+          <li><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></i>&ensp;Notificaciones</a></li>
+          <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>&ensp;Mensajes</a></li>
+        </ul>
+      </div>
+
+      <!-- Icono de Twitter -->
+      <span><i class="fa fa-twitter" id="twitter-logo" aria-hidden="true"></i></span>
+
+      <div>
+        <!-- Formulario de búsqueda -->
+        <form>
+          <input type="search" name="search" placeholder="Buscar en Twitter">
+        </form>
+        <span><i class="fa fa-search" aria-hidden="true"></i></span>
+        <button type="button">Twittear</button>
+      </div>
+    </header>
+
+    <!-- Información de perfil -->
+    <section>
+      <div id="profile">
+        <h2>Andrea Tellería</h3>
+        <h3>@atelleria</h3>
+        <p>Web developer in progress who loves books, videogames and photography. Never give up and good luck will find you!</p>
+      </div>
+    </section>
+
+    <!-- Espacio donde escribir el tweet -->
+    <section id="tweet">
+      <form>
+        <textarea name="textarea" id="textarea" placeholder="¿Qué está pasando?"></textarea>
+      </form>
+      <button type="button" name="button" id="tweetbtn" disabled='disabled'>Twittear</button>
+      <p id="counter">140</p>
+    </section>
+
+    <!-- Tweets publicados -->
+    <section id="tweeted">
+
+    </section>
+
+    <!-- Archivo Javascript vinculado -->
+    <script type="text/javascript" src="js/app.js">
+    </script>
+  </body>
+</html>
