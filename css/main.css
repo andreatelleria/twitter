@@ -202,6 +202,7 @@ header button {
 #tweeted {
 	width: 500px;
 	height: auto;
+  margin-top: 50px;
   text-align: left;
 	color: #14171A;
 }
@@ -210,6 +211,7 @@ header button {
   width: 580px;
 	height: auto;
 	margin-top: 10px;
+  margin-left: 405px;
   margin-bottom: 10px;
 	padding: 16px 10px;
 	outline: 1px solid #1DA1F2;
@@ -217,9 +219,8 @@ header button {
 }
 
 .time {
-	display:inline-block;
-	margin: 0;
-	margin-right: 5px;
+	display: inline-block;
+  margin-left: 405px;
 	font-size: 14px;
 	color: #7D8A99;
 }

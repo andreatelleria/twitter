@@ -38,42 +38,42 @@ window.addEventListener('load', function () {
 
     if (content.length > 0) {
       var tweetsContainer = document.getElementById('tweeted');
-		  var newElement = document.createElement('div');
-		  var newParagraph = document.createElement('p');
-		  var firstElement = tweetsContainer.children[0];
+      var newElement = document.createElement('div');
+      var newParagraph = document.createElement('p');
+      var firstElement = tweetsContainer.children[0];
 
       content = document.createTextNode(content);
-		  newParagraph.appendChild(content);
-		  newParagraph.classList.add('tweetParagraph');
-		  newElement.appendChild(newParagraph);
+      newParagraph.appendChild(content);
+      newParagraph.classList.add('tweetParagraph');
+      newElement.appendChild(newParagraph);
 
       tweetsContainer.insertBefore(newElement, firstElement);
 
       /**/
       var time = new Date();
-		  var hours = time.getHours();
-		  var minutes = time.getMinutes();
+      var hours = time.getHours();
+      var minutes = time.getMinutes();
 
-		  if (hours < 10) {
-			  hours = '0' + hours;
-		  }
+      if (hours < 10) {
+        hours = '0' + hours;
+      }
 
-		  if (minutes < 10) {
-			  minutes = '0' + minutes;
-		  }
+      if (minutes < 10) {
+        minutes = '0' + minutes;
+      }
 
-		  time = 'Posted on ' + hours + ':' + minutes;
-		  var hora = document.createElement('p');
-		  var horaContent = document.createTextNode(time);
-		  hora.classList.add("time");
-		  hora.appendChild(horaContent);
-		  newElement.insertBefore(hora, newParagraph);
+      time = 'Posted on ' + hours + ':' + minutes;
+      var hora = document.createElement('p');
+      var horaContent = document.createTextNode(time);
+      hora.classList.add('time');
+      hora.appendChild(horaContent);
+      newElement.insertBefore(hora, newParagraph);
 
-		  /**/
-  		textarea.value = '';
-  		textarea.style.height = '80px';
-  		counter.textContent = '140';
-  		button.setAttribute("disabled","disabled");
+      /**/
+      textarea.value = '';
+      textarea.style.height = '80px';
+      counter.textContent = '140';
+      button.setAttribute('disabled', 'disabled');
     }
   });
 
